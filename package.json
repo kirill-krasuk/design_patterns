@@ -1,0 +1,49 @@
+{
+	"name": "design_patterns",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"singleton": "ts-node ./creational/singleton/index.ts",
+		"factory_method": "ts-node ./creational/factory_method/index.ts",
+		"abstract_factory": "ts-node ./creational/abstract_factory/index.ts",
+		"builder": "ts-node ./creational/builder/index.ts",
+		"prototype": "ts-node ./creational/prototype/index.ts",
+		"adapter": "ts-node ./structural/adapter/index.ts",
+		"bridge": "ts-node ./structural/bridge/index.ts",
+		"composite": "ts-node ./structural/composite/index.ts",
+		"decorator": "ts-node ./structural/decorator/index.ts",
+		"facade": "ts-node ./structural/facade/index.ts",
+		"proxy": "ts-node ./structural/proxy/index.ts",
+		"flyweight": "ts-node ./structural/flyweight/index.ts",
+		"chain": "ts-node ./behavioral/chain_of_responsibility/index.ts",
+		"observer": "ts-node ./behavioral/observer/index.ts",
+		"iterator": "ts-node ./behavioral/iterator/index.ts",
+		"state": "ts-node ./behavioral/state/index.ts",
+		"strategy": "ts-node ./behavioral/strategy/index.ts",
+		"visitor": "ts-node ./behavioral/visitor/index.ts",
+		"template": "ts-node ./behavioral/template_method/index.ts",
+		"memento": "ts-node ./behavioral/memento/index.ts",
+		"mediator": "ts-node ./behavioral/mediator/index.ts",
+		"command": "ts-node ./behavioral/command/index.ts",
+		"types": "tsc --noEmit -p ."
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/jest": "^28.1.5",
+		"eslint-import-resolver-typescript": "^3.2.5",
+		"eslint-plugin-jest": "^26.5.3",
+		"jest": "^28.1.3",
+		"ts-jest": "^28.0.5",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.4"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.30.6",
+		"@typescript-eslint/parser": "^5.30.6",
+		"eslint": "^8.19.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.26.0"
+	}
+}

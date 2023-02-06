@@ -1,0 +1,83 @@
+<mxfile host="65bd71144e">
+    <diagram id="mg9zQMadud2ZIiRs7ZPm" name="Страница 1">
+        <mxGraphModel dx="1186" dy="970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="10" width="740" height="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Chain of Responsibility" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="10" width="210" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="PaymentHandler" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="120" width="330" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="# handler: PaymentHandler" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;" vertex="1" parent="4">
+                    <mxGeometry y="26" width="330" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=15;" vertex="1" parent="4">
+                    <mxGeometry y="52" width="330" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;i&gt;+ handle(amount: number): void&lt;/i&gt;&lt;br&gt;+ setNext(handler: PaymentHandler): this" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;html=1;" vertex="1" parent="4">
+                    <mxGeometry y="60" width="330" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=15;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="4" target="4">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="400" y="470" as="sourcePoint"/>
+                        <mxPoint x="560" y="470" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="520" y="140"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="CardPaymentHandler" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=15;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="280" width="300" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=15;html=1;" vertex="1" parent="9">
+                    <mxGeometry y="26" width="300" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="+ handle(amount: number): void&lt;br&gt;+ setNext(handler: PaymentHandler): this" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;html=1;" vertex="1" parent="9">
+                    <mxGeometry y="34" width="300" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="PayPalPaymentHandler" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=15;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="280" width="300" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=15;html=1;" vertex="1" parent="13">
+                    <mxGeometry y="26" width="300" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="+ handle(amount: number): void&lt;br&gt;+ setNext(handler: PaymentHandler): this" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;html=1;" vertex="1" parent="13">
+                    <mxGeometry y="34" width="300" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="CryptoPaymentHandler" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=15;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="264" y="370" width="300" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=15;html=1;" vertex="1" parent="16">
+                    <mxGeometry y="26" width="300" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="+ handle(amount: number): void&lt;br&gt;+ setNext(handler: PaymentHandler): this" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;html=1;" vertex="1" parent="16">
+                    <mxGeometry y="34" width="300" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;fontSize=15;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="16" target="4">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="400" y="470" as="sourcePoint"/>
+                        <mxPoint x="560" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;fontSize=15;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="13" target="4">
+                    <mxGeometry x="0.006" width="160" relative="1" as="geometry">
+                        <mxPoint x="380.2222222222222" y="370" as="sourcePoint"/>
+                        <mxPoint x="348.44444444444434" y="240" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;fontSize=15;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="9" target="4">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="514.4444444444446" y="280" as="sourcePoint"/>
+                        <mxPoint x="438.8888888888889" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
